@@ -60,6 +60,8 @@ module.exports = defineConfig({
     }
   ],
   admin: {
-    disable: process.env.DISABLE_MEDUSA_ADMIN === 'false'
+    disable: process.env.DISABLE_MEDUSA_ADMIN === 'false',
+    backendUrl: process.env.ADMIN_CORS,
+    path: "/app"
   }
 })
